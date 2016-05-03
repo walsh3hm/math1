@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+// Initilizing variables
+var a = process.argv[2]
+var b = process.argv[3]
+var c = (+a) + (+b)
+var d = (+a) - (+b)
+var e = (+a) * (+b)
+var f = (+a) / (+b)
+
+// Calculations
+console.log("The addition answer is " + c + " ")
+console.log("The subtraction answer is " + d + " ")
+console.log("The multiplication answer is " + e +" ")
+
+if (f == Number.POSITIVE_INFINITY)
+{
+	console.log("The division answer cannot be defined")
+}
+else {
+	console.log("The division answer is " + f +" ")
+}
